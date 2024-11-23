@@ -1,0 +1,17 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: TaskManagerSystems
+
+  datasource:
+    url: jdbc:postgresql://postgres-db:5432/postgres
+    username: postgres
+    password: 12345
+
+  flyway:
+    url: jdbc:postgresql://postgres-db:5432/postgres
+    user: postgres
+    password: 12345
+    locations: classpath:db/migration
